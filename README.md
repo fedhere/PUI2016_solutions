@@ -45,26 +45,28 @@ The full list of PEP8 style guidelines is far longer https://www.python.org/dev/
   you if your code does not run for silly reasons: if we can fix it we may award partial 
   points (if the reason is silly enough)
 
-- use spaces between operators: 
-  ```
-  a + b
+- use spaces between operators:   
 	```
-	instead of:
+  	a + b
+	```
+  instead of:
 	```
 	a+b
-  ```
-- if you use the try/except syntx name your allowed exceptions: 
-  ```
-  try: 
-    do_blah()
-  except ValueError, IndexError:        <or wwhatever exceptions you want to allow>
-	  pass <or whatever you need to do>
-	```
-	instead of: 
-	```
-	try: 
-    do_blah()
-  except:
-	  pass
-  ```
+  	```
+  	
+- if you use the try/except syntx name your allowed exceptions:
+
+  	```
+  	try: 
+  		do_blah()
+  	except ValueError, IndexError:        <or wwhatever exceptions you want to allow>
+		pass <or whatever you need to do>
+   	```
+  instead of: 
+  	```
+   	try: 
+    		do_blah()
+  	except:
+		pass
+  	```
 - indent by 4 spaces, not by tabs
