@@ -119,11 +119,11 @@ Name” and “Stop Status” fields.
 
 ### GRADING: 
 All or nothing at all: 
-- 100% of the poitns if the TA can run the code with his/her MTA key and get a correctly formatted output.
+- 100% of the points if the TA can run the code with his/her MTA key and get a correctly formatted output.
 
 The TAs will do minimal inspection of your code if it does not work. If the issue is not immediately obvious you will not get points for this assignment. 
 
-Working code but wrong output format  (but ciorrect content)will earn 50% of the points.
+Working code but wrong output format  (but correct content) will earn 50% of the points.
 
 # Assignment 3: Read CSV files with pandas
 
