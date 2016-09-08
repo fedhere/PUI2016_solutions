@@ -142,7 +142,7 @@ Write a Jupyter Notebook on compute. This will require you to use the JupyterHub
 
 
 ### GRADING: 
-You must use the envuronmental variable.
+You must use the environment variable.
 
 Your notebook must display
 - the data tables for the unreducted datasets (first few columns)
