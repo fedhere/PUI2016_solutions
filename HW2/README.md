@@ -1,6 +1,8 @@
 # PUI2016 HW 2.
 
-## Write scripts to stream real-time bus data from MTA through the MTA Bus Time interface. In order to access this data, you must first request an API key from MTA. (This homework is based on assignments by Prof. Vo, who is a specialist in transportation and databases, and who you will meet later in the semester.) 
+## Write scripts to stream real-time bus data from MTA through the MTA Bus Time interface. In order to access this data, you must first request an API key from MTA. 
+
+This homework is based on assignments by Prof. Vo, who is a specialist in transportation and databases, and who you will meet later in the semester. 
 
   1. Visit MTA Bus Time for Developers at the [MTA Developers Tools](http://bustime.mta.info/wiki/Developers/Index)
   2. Click on the “Go here” link to fill in your information and request an API. You should be
