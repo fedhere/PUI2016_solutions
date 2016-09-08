@@ -2,13 +2,35 @@ from __future__ import print_function
 __author__ = 'fb55'
 
 import sys
-import urllib2
 import json
+try:
+    import urllib2 as urllib
+except ImportError:
+    import urllib.request as urllib
 
 DEBUG = False  # Change to True to print debug statements
 
+
+def get_jsonparsed_data(url):
+    """
+    from http://stackoverflow.com/questions/12965203/how-to-get-json-from-webpage-into-python-script
+    Receive the content of ``url``, parse it as JSON and return the object.
+
+    Parameters
+    ----------
+    url : str
+
+    Returns
+    -------
+    dict
+    """
+    response = urllib.urlopen(url)
+    data = response.read().decode("utf-8")
+    return json.loads(data)
+
+
 if __name__ == '__main__':
-    '''Outputs the distance to the next stop for all MTA busses currently running for a given bus line.
+    """Outputs the distance to the next stop for all MTA busses currently running for a given bus line.
 
     Arguments: 
         MTA key
@@ -17,7 +39,7 @@ if __name__ == '__main__':
 
     Output:
         CSV file
-    '''
+    """
 
     if not len(sys.argv) == 4:
         print('''USAGE:
@@ -38,8 +60,7 @@ if __name__ == '__main__':
         print("URL of the bus", bus_url)
 
     # queries the url for json format bus data
-    response = urllib2.urlopen(bus_url)
-    busdata = json.load(response)
+    busdata = get_jsonparsed_data(bus_url)
 
     # counting the number of active busses
     nbusses = len(busdata['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'])
