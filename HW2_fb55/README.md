@@ -131,7 +131,7 @@ Work on [compute](https://github.com/fedhere/PUI2016_fb55/blob/master/computatio
 
 1. Set an environmental variable DFDATA that points to the data facility location /gws/open/NYCOpenData/nycopendata/data/.
 
-Write a Jupyter Notebook that 
+Write a Jupyter Notebook on compute. This will require you to use the JupyterHub ([instructions here](https://datahub.cusp.nyu.edu/documents/guides/Jupyter_Notebook_from_your_browser_Mac.pdf) ). Write a notebook that:
 
 2. Use pandas to read in the CSV file from the DF as a dataframe. The CSV file must have 2 numerical value columns.
 3. Display the top few rows of the DF in your notebook. This table __must be rendered__.
