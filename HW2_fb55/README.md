@@ -21,7 +21,7 @@ accessing the following [URL](http://api.prod.obanyc.com/api/siri/vehiclemonitor
 
 ### IMPORTANT NOTE:
 The BusTime API server strictly enforces users to issue only 1 request per 30
-seconds. Please do not constantly download or fetching data from the API in
+seconds. Please do not constantly download or fetch data from the API in
 shorter periods. It is a good idea to download a copy of the response to your
 local machine for testing purposes. Also make sure to open it in an editor to
 familiarize yourself with all the fields of the response.
