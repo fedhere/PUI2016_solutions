@@ -27,7 +27,7 @@ local machine for testing purposes. Also make sure to open it in an editor to
 familiarize yourself with all the fields of the response.
 
 
-# Assignment 1:  tracking vehicles for a chosen busline
+# Assignment 1:  tracking vehicles for a chosen bus-line
 
 Write a Python script (not a notebook this time, so that you can experiment with writing code that takes line inputs) to retrieve and report information about active
 vehicle for a bus line. 
