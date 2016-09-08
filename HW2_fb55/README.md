@@ -14,7 +14,7 @@ This homework is based on assignments by Prof. Vo, who is a specialist in transp
 ### You can work in groups, and you are encouraged to. Create a HW2\_\<netID> directory in your PUI2016\_\<netID> repository. Include a README.md that briefly summarizes the scope of the homework, and states who you worked with and what you specifically worked on.  Submit Assignment 1 and Assignment 2 by pushing them into your PUI2016\_\<netID>/HW2\_\<netID>  repository. Keep in mind that we will look for possible cases of plagiarism, and if the code is the same as that of people that you did not work with (there are automated ways to look for plagiarism in code) *you will be penalized*. 
 
   
-MTA is using the SIRI (Service Interface for Real Time Information) API to serve their data in both XML and JSON format. I want you to use JSON for its increasing popularity in data access API over the web, and because it is a very natural format in Python, since it maps identically to a Python strucure. 
+MTA is using the SIRI (Service Interface for Real Time Information) API to serve their data in both XML and JSON format. I want you to use JSON for its increasing popularity in data access API over the web, and because it is a very natural format in Python, since it maps identically to a Python _dictionary_. 
 Information on the vehicle monitoring stream is available [here](http://bustime.mta.info/wiki/Developers/SIRIVehicleMonitoring)
 For example, using your key, you can retrieve all vehicle information for a bus line, e.g. B52, by
 accessing the following [URL](http://api.prod.obanyc.com/api/siri/vehiclemonitoring.json?key=YOUR_KEY&VehicleMonitoringDetailLevel=calls&LineRef=B52)
