@@ -4,7 +4,7 @@ __author__ = 'fb55'
 import sys
 import json
 try:
-    import urllib2
+    import urllib2 as urllib
 except ImportError:
     import urllib.request as urllib
 
