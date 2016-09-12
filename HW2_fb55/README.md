@@ -2,7 +2,7 @@
 
 ## Write scripts to stream real-time bus data from MTA through the MTA Bus Time interface. In order to access this data, you must first request an API key from MTA. 
 
-This homework is based on assignments by Prof. Vo, who is a specialist in transportation and databases, and who you will meet later in the semester. 
+This homework is based on assignments by Prof. Vo, who is a specialist in transportation and databases, and whome you will meet later in the semester. Please request your API right after class! It may take some time before you get a reply from MTA.
 
   1. Visit MTA Bus Time for Developers at the [MTA Developers Tools](http://bustime.mta.info/wiki/Developers/Index)
   2. Click on the “Go here” link to fill in your information and request an API. You should be
@@ -11,10 +11,10 @@ This homework is based on assignments by Prof. Vo, who is a specialist in transp
 
 
 ## Submission Info:
-### You can work in groups, and you are encouraged to. Create a HW2\_\<netID> directory in your PUI2016\_\<netID> repository. Include a README.md that briefly summarizes the scope of the homework, and states who you worked with and what you specifically worked on.  Submit Assignment 1 and Assignment 2 by pushing them into your PUI2016\_\<netID>/HW2\_\<netID>  repository. Keep in mind that we will look for possible cases of plagiarism, and if the code is the same as that of people that you did not work with (there are automated ways to look for plagiarism in code) *you will be penalized*. 
+### You can work in groups, and you are encouraged to. Create a HW2\_\<netID> directory in your PUI2016\_\<netID> repository. Include a README.md that briefly summarizes the scope of the homework (so we know you understand what you did), and states with whome you worked and what you specifically contributed to.  Submit Assignment 1 and Assignment 2 by pushing the scripts into your PUI2016\_\<netID>/HW2\_\<netID>  repository. You can work on whatever computer you wish to develope these scripts. Work on Assignment 3 in the jupyter environment within CUSP (like you did for UCSL), so you have acces to the Data Facility. Keep in mind that we will look for possible cases of plagiarism, and if the code appears too similarto that of people that you did not work with to be original work (there are automated ways to look for plagiarism in code) *you will be penalized*. 
 
   
-MTA is using the SIRI (Service Interface for Real Time Information) API to serve their data in both XML and JSON format. I want you to use JSON for its increasing popularity in data access API over the web, and because it is a very natural format in Python, since it maps identically to a Python strucure. 
+MTA is using the SIRI (Service Interface for Real Time Information) API to serve their data in both XML and JSON format. I want you to use JSON for its increasing popularity in data access API over the web, and because it is a very natural format in Python, since it maps identically to a Python dictionary. 
 Information on the vehicle monitoring stream is available [here](http://bustime.mta.info/wiki/Developers/SIRIVehicleMonitoring)
 For example, using your key, you can retrieve all vehicle information for a bus line, e.g. B52, by
 accessing the following [URL](http://api.prod.obanyc.com/api/siri/vehiclemonitoring.json?key=YOUR_KEY&VehicleMonitoringDetailLevel=calls&LineRef=B52)
