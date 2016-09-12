@@ -21,7 +21,7 @@ accessing the following [URL](http://api.prod.obanyc.com/api/siri/vehiclemonitor
 
 ### IMPORTANT NOTE:
 The BusTime API server strictly enforces users to issue only 1 request per 30
-seconds. Please do not constantly download or fetching data from the API in
+seconds. Please do not constantly download or fetch data from the API in
 shorter periods. It is a good idea to download a copy of the response to your
 local machine for testing purposes. Also make sure to open it in an editor to
 familiarize yourself with all the fields of the response.
@@ -62,7 +62,14 @@ Bus 2 is at latitude 40.688363 and longitude -73.979563
 Bus 3 is at latitude 40.688282 and longitude -73.979356
 Bus 4 is at latitude 40.686839 and longitude -73.964694
 ```
-
+### Grading:
+ 
+ All or nothing at all: 
+ - 100% of the points if the TA can run the code with his/her MTA key and get a correctly formatted output.
+ 
+ The TAs will do minimal inspection of your code if it does not work. If the issue is not immediately obvious you will not get points for this assignment. 
+ 
+ Working code but wrong output format (but correct content) will earn 50% of the points.
 
 # Assignment 2: next stop information
 
@@ -107,3 +114,36 @@ distribution. If you use any additional Python packages that are not included in
 please specify them in your README.md when you turn in your github repository.
 - When the OnwardCalls field is empty, you must output “N/A” as values for both the “Stop
 Name” and “Stop Status” fields.
+
+### Grading:
+
+All or nothing at all: 
+- 100% of the points if the TA can run the code with his/her MTA key and get a correctly formatted output.
+
+The TAs will do minimal inspection of your code if it does not work. If the issue is not immediately obvious you will not get points for this assignment. 
+
+Working code but wrong output format (but correct content) will earn 50% of the points.
+
+# Assignment 3: Read CSV files with pandas
+
+Work on [compute](https://github.com/fedhere/PUI2016_fb55/blob/master/computationalResources.md). Choose a [dataset within the CUSP data facility (DF)](https://datahub.cusp.nyu.edu/dataset) that is available in CSV format (look at the format labels in the list of datasets). Chose one that has _at least_ 2 __numerical value__ columns. __DO NOT DOWNLOAD IT__: you must access it throught compute directly from the DF!! The data location may be stated in the description of the dataset, which you access by clicking the dataset, and may be stated in full in full under __Cusp Location__ (e.g. /gws/open/NYCOpenData/nycopendata/data/5b3a-rs48), or sometimes indicated by the __Data ID__	(e.g. uedp-fegm), in which case the first part of the path /gws/open/NYCOpenData/nycopendata/data/ is implicit.
+
+1. Set an environmental variable DFDATA that points to the data facility location /gws/open/NYCOpenData/nycopendata/data/.
+
+Write a Jupyter Notebook on compute. This will require you to use the JupyterHub ([instructions here](https://datahub.cusp.nyu.edu/documents/guides/Jupyter_Notebook_from_your_browser_Mac.pdf) ). Write a notebook that:
+
+2. Use pandas to read in the CSV file from the DF as a dataframe. The CSV file must have at least 2 numerical value columns.
+3. Display the top few rows of the DF in your notebook. This table __must be rendered__.
+4. Remove all but 2 _numerical values_ columns of your choice (you can use the drop method in the dataframe) 
+5. Display the reducted dataframe. This table __must be rendered__.
+6. Plot the columns one against the other in a scatter plot (usual rules for plotting apply, see [Grading Guidelines](https://github.com/fedhere/PUI2016_fb55/blob/master/README.md) and the [instruction notebooks for HW1 Extra Credit](https://github.com/fedhere/PUI2016_fb55/blob/master/HW1_fb55/HW1_3_fb55.ipynb), part 3, for more detailed hints on how to display your rendered plots. The plot __must be rendered__.
+7. Repeat the steps above 1-6 with a CSV file that contains _a date/time column and a numerical value_. Plot the numerical value against the date/time (hint: make sure your tick labels are readable. you can use they keyword rot in the df.plot() method, as for example df.plot(....., rot=90) to rotate the tick labels by 90 degrees.
+
+
+### GRADING: 
+You must use the environment variable.
+
+Your notebook must display
+- the data tables for the unreducted datasets (first few columns)
+- the data tables for the reducted datasets (first few columns)
+- the plots for each dataframe, with usual rules for plotting applying: visible and readable axes, title, legend, caption. 
