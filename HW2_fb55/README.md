@@ -151,7 +151,7 @@ Your notebook must display
 
 
 
-# Extra Credit Assignment : work with dates/
+# Extra Credit Assignment : work with dates in Pandas
 
 Repeat the steps above 1-7 with a CSV file that contains _a date/time column and a numerical value_. Plot the numerical value against the date/time (hint: make sure your tick labels are readable. you can use they keyword rot in the df.plot() method, as for example df.plot(....., rot=90) to rotate the tick labels by 90 degrees.
 
