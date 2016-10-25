@@ -3,6 +3,7 @@ import pandas as pd
 def readIncomeXls(url):
     return pd.read_excel(url, header=3, index_col="ZIP\ncode [1]")
 
+# Even after reading it in with this function 
 # this file requires some serious wrangling. 
 # the zipcode is going to be read in as the index, but not all indeces are valid zipcodes.
 # transform the zipcode to a number by using pd.to_numeric(... errors='coerce')
