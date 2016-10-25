@@ -5,9 +5,9 @@ def readIncomeXls(url):
 
 # Even after reading it in with this function 
 # this file requires some serious wrangling. 
-# the zipcode is going to be read in as the index, but not all indeces are valid zipcodes.
-# transform the zipcode to a number by using pd.to_numeric(... errors='coerce')
+# The zipcode is going to be read in as the index, but not all indeces are valid zipcodes.
+# Transform the zipcode to a number by using pd.to_numeric(... errors='coerce')
 # zipcs = ...
-# then you can extract the valid rows as 
+# then you can extract the valid rows as: 
 # zipcs = zipcs[~np.isnan(zipcs)].astype(int)
 # and to remove duplicate entries as list(set(zipcs))
